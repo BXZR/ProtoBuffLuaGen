@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Magic.GameEditor
 {
-    public static class StringUtility
+    public static class StringUtility 
     {
         private static StringBuilder m_StringBuilder = new StringBuilder(512);
 
