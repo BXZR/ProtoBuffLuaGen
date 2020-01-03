@@ -1,0 +1,8 @@
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\bin\Debug\ProtoBuffLuaGen.exe.config
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\obj\Debug\ProtoBuffLuaGen.csprojResolveAssemblyReference.cache
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\bin\Debug\ProtoBuffLuaGen.exe
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\bin\Debug\ProtoBuffLuaGen.pdb
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\bin\Debug\protobuf-net.dll
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\bin\Debug\protobuf-net.Reflection.dll
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\obj\Debug\ProtoBuffLuaGen.exe
+D:\FM_Git\ProtobuffLuaGen\ProtoBuffLuaGen\ProtoBuffLuaGen\obj\Debug\ProtoBuffLuaGen.pdb
