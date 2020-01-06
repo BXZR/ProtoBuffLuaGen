@@ -9,17 +9,27 @@ namespace Magic.GameEditor
     class Program
     {
         public static string applicationPath = @"D:\NDWork\projrct008_Unity2018_Android\project008\project008\MagicClient\Assets";
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            var arguments = CommandLineArgumentParser.Parse(args);
-            if (arguments.Has("-rootpath"))
+            try
             {
-                applicationPath = arguments.Get("-rootpath").Next;
-                Magic.GameEditor.GenLuaForProto.Generate();
+                var arguments = CommandLineArgumentParser.Parse(args);
+                if (arguments.Has("-rootpath"))
+                {
+                    applicationPath = arguments.Get("-rootpath").Next;
+                    Magic.GameEditor.GenLuaForProto.Generate();
+                    return 0;
+                }
+                else
+                {
+                    Console.WriteLine("缺少重要参数：起始路径");
+                    return 1;
+                }
             }
-            else
+            catch (Exception E)
             {
-                Console.WriteLine("缺少重要参数：起始路径");
+                Console.WriteLine("错误："+E.ToString());
+                return 1;
             }
           
         }
