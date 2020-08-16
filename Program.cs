@@ -17,6 +17,7 @@ namespace Magic.GameEditor
                 if (arguments.Has("-rootpath"))
                 {
                     applicationPath = arguments.Get("-rootpath").Next;
+                    applicationPath = applicationPath.Replace('\\', '/');
                     Magic.GameEditor.GenLuaForProto.Generate();
                     return 0;
                 }

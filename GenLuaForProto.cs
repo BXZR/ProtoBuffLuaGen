@@ -174,9 +174,16 @@ namespace Magic.GameEditor
                 pbWriter.WriteLuaFile();
             };
 
+
+            if (Directory.Exists(ProjectPath + "/../MagicGameCode/LuaScripts/Net/Config") == false)
+                Directory.CreateDirectory(ProjectPath + "/../MagicGameCode/LuaScripts/Net/Config");
+
+            if (Directory.Exists(ProjectPath + "/../MagicGameCode/Projects/GameCougar/Implement/Gen") == false)
+                Directory.CreateDirectory(ProjectPath + "/../MagicGameCode/Projects/GameCougar/Implement/Gen");
+
             //Generate LP
             lambdaFunc(new DirectoryInfo(ProjectPath + "/../Dep/serverlp/proto"), ProjectPath + "/Assets/Resources/Config/pb/lp", 
-                Path.GetFullPath(ProjectPath + "/../MagicGameCode/LuaScripts/Net/Config/ProtoLPPBConfig.lua"), "lp");
+            Path.GetFullPath(ProjectPath + "/../MagicGameCode/LuaScripts/Net/Config/ProtoLPPBConfig.lua"), "lp");
 
             //Generate BS
             lambdaFunc(new DirectoryInfo(ProjectPath + "/../Dep/server/proto"), ProjectPath + "/Assets/Resources/Config/pb/bs",
